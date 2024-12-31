@@ -1,0 +1,41 @@
+<div id="destinationCarousel" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-indicators">
+    <button type="button" data-bs-target="#destinationCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#destinationCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#destinationCarousel" data-bs-slide-to="2"></button>
+</div>
+<div class="carousel-inner">
+    <div class="carousel-item active">
+        <%= image_tag "paris.jpg" %>    
+        <div class="carousel-caption">
+            <h2 class="display-4 fw-bold">Paris, France</h2>
+            <p class="lead">Experience the magic of the City of Light</p>
+            <%= link_to "Explore Paris", destination_link, class: "btn btn-primary btn-lg" %>
+    </div>
+    </div>
+    <div class="carousel-item">
+    <%= image_tag "tokyo.jpg" %>
+    <div class="carousel-caption">
+        <h2 class="display-4 fw-bold">Tokyo, Japan</h2>
+        <p class="lead">Where tradition meets innovation</p>
+        <%= link_to "Discover Tokyo", destination_link, class: "btn btn-primary btn-lg" %>
+    </div>
+    </div>
+    <div class="carousel-item">
+    <%= image_tag "newyork.jpg" %>
+    <div class="carousel-caption">
+        <h2 class="display-4 fw-bold">New York, USA</h2>
+        <p class="lead">The city that never sleeps</p>
+        <%= link_to "Visit New York", destination_link, class: "btn btn-primary btn-lg" %>
+    </div>
+    </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#destinationCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#destinationCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Next</span>
+</button>
+</div>
